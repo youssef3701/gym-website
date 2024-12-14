@@ -1,0 +1,329 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: #000;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('images/gym-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Classes Section */
+  .class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .class-card {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Trainers Section */
+/* Our Trainers Section */
+.trainers {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .trainers-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .trainers-heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .trainers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .trainer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Adjust width of each trainer card */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .trainer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+  }
+  
+  .trainer-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .trainer-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .trainers-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .trainer-card {
+      width: 90%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  /* Contact Section */
+/* Contact Us Section */
+.contact {
+    background-color: #f4f4f4; /* Light background */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Fixed width for form */
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-group textarea {
+    height: 150px; /* Set height for message field */
+  }
+  
+  .submit-btn {
+    background-color: #3b8d99; /* Gym-related color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2b6a77;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 90%; /* Full width on smaller screens */
+    }
+  }
+  
+  
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+  }
+
+/* About Us Section */
+.about-us {
+    background-color: #f4f4f4; /* Light gray color, change it as needed */
+    height: 300px; /* Adjust the height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-us-content {
+    max-width: 600px; /* Keeps the content centered */
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+  }
+  /* Our Classes Section */
+.our-classes {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .classes-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .classes-heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .classes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .class-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Adjust the width of each class card */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .class-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .class-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .classes-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .class-card {
+      width: 90%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+    }
+  }
+  
